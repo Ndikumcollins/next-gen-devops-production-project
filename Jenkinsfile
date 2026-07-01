@@ -9,8 +9,7 @@ pipeline {
         }
         stage('Run Automated Script') {
             steps {
-                // This tells Jenkins to run your original nano script!
-                // (Make sure this matches the exact filename of your script)
+                // This runs our newly rewritten shell script!
                 sh 'bash ./myscript.sh'
             }
         }
